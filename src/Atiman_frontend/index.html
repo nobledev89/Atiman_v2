@@ -2,16 +2,317 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>IC Hello Starter</title>
-  <base href="/" />
-  <link rel="icon" href="/favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atiman Online</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo-green.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#frontpg">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact Us</a>
+          </li>
+          <li>
+            <a href="#" class="btn btn-brand ms-3">WHITEPAPER</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--FRONTPG-->
+  <section id="frontpg" class="min-vh-100 d-flex text-center">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <H1 class="text-uppercase display-1 text-white fw-bold" data-aos="fade-left" data-aos-delay="350">ATIMAN
+            ONLINE</H1>
+          <H3 class="text-white fw-semibold" data-aos="fade-up" data-aos-delay="350">POWERED BY: THE RESOURCE ROOM</H3>
+          <H6 class="text-white fw-semibold" data-aos="fade-up" data-aos-delay="350">FOR THE CHILDREN, THE YOUTH, AND
+            FAMILIES AT RISK</H6>
+          <a href="#" class="btn btn-brand me-2 mt-5" data-aos="fade-down" data-aos-delay="550" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">SIGN UP</a>
+          <a href="./assets/forms/level1.pdf" download="level1.pdf" class="btn btn-light ms-2 mt-5" data-aos="fade-down" data-aos-delay="550">FORMS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SIGNUP-MODAL-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog d-flex">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="div">
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">First name *</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Last name *</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-12">
+                <label for="validationDefault01" class="form-label">Address *</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-12">
+                <label for="validationDefault01" class="form-label">Email *</label>
+                <input type="email" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Mobile number *</label>
+                <input type="tel" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Gender *</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">Female</option>
+                  <option value="2">Male</option>
+                  <option value="3">Other</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Birthday *</label>
+                <input type="date" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationDefault01" class="form-label">Age *</label>
+                <input type="number" class="form-control" id="validationDefault01" value="" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Referrer</label>
+                <input type="text" class="form-control" value="" >
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Relationship with referrer</label>
+                <input type="text" class="form-control" value="" >
+              </div>
+              <div>
+                <div class="col-md-12 d-grid">
+                  <input type="submit" class="btn btn-success" name="submit">
+                </div>
+                <div class="col-md-12 d-grid my-2">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ABOUT-->
+  <section id="about" class="section-padding">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-center section-title" data-aos="fade-down" data-aos-delay="200">
+            <h1 class="display-4 fw-semibold">About us</h1>
+            <div class="line"></div>
+            <p>At Atiman, we are more than a service provider; we are a community. Together, we can build a brighter
+              future for our children and youth. Whether you are seeking help or looking to support our mission, we
+              welcome you with open arms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-between align-items-center">
+        <div class="col-lg-4">
+          <img src="./assets/images/kid.jpg" data-aos="fade-left" data-aos-delay="150">
+        </div>
+        <div class="col-lg-8 section-content" data-aos="fade-right" data-aos-delay="200">
+          <div>
+            <h3 class="text-center my-2">About Atiman</h3>
+            <p>At Atiman, we believe that every child and family deserves a safe and nurturing environment to thrive.
+              Our mission is to provide comprehensive psychiatric support to children and youth facing mental health
+              challenges, PTSD, depression, addiction, and other related issues.</p>
+            <p>We are dedicated to offering a sanctuary where young minds can heal, grow, and find hope. With a team
+              of compassionate professionals, we provide tailored treatment plans that address the unique needs of each
+              individual and family.</p>
+          </div>
+          <div>
+            <div class="d-flex">
+              <div class="iconbox me-3">
+                <i class="ri-service-fill"></i>
+              </div>
+              <div>
+                <h5>Who we Help</h5>
+                <p>Children and Youth: Struggling with mental illness, trauma, or behavioral issues.
+                  Families: Looking for guidance and support to navigate challenging times.
+                  Caregivers and Educators: Seeking resources and training to better support the mental well-being of
+                  children and teens.</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="iconbox me-3">
+                <i class="ri-hearts-fill"></i>
+              </div>
+              <div>
+                <h5>Our Services</h5>
+                <p>Individual Therapy: One-on-one sessions to explore personal challenges and develop coping
+                  strategies.
+                  Family Therapy: Collaborative sessions to strengthen family bonds and improve communication.
+                  Group Therapy: Support groups where peers can share experiences and support each other.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--FAQS-->
+  <section id="faqs" class="section-padding border-top">
+    <div class="container mt-5">
+      <div class="row text-center">
+        <div class="col-12">
+          <div class="text-center section-title" data-aos="fade-down" data-aos-delay="200">
+            <h1 class="display-4 fw-semibold">FAQS</h1>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="question theme-shadow p-gl-5 p-4">
+            <div class="iconbox">
+              <i class="ri-empathize-line"></i>
+            </div>
+            <h5 class="mt-4 mb-3">What age groups do you serve?</h5>
+            <p>We provide support for children and youth ranging from early childhood through adolescence. Our tailored
+              programs are designed to meet the specific needs of each age group, ensuring effective and compassionate
+              care.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="question theme-shadow p-gl-5 p-4">
+            <div class="iconbox">
+              <i class="ri-mail-send-line"></i>
+            </div>
+            <h5 class="mt-4 mb-3">How can I schedule an appointment?</h5>
+            <p>You can schedule an appointment by contacting us through our website's "Message Us" section or by calling
+              our office directly. Our team will assist you in setting up a convenient time for your first visit and
+              answer any questions you may have.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="question theme-shadow p-gl-5 p-4">
+            <div class="iconbox">
+              <i class="ri-mental-health-line"></i>
+            </div>
+            <h5 class="mt-4 mb-3">What types of therapy do you offer?</h5>
+            <p>We offer a variety of therapy options, including individual therapy and family therapy. Our services are
+              designed to address a range of mental health issues. Our team will work with you to determine the best
+              approach for your needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--CONTACTUS-->
+  <section id="contactus" class="section-padding bg-dark">
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <h1 class="display-4 text-white fw-semibold">Message us</h1>
+            <div class="line bg-white"></div>
+            <p class="text-white">Have questions or need assistance? We're here to help! Send us a message, and our team
+              will get back to you as soon as possible.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form action="#" class="row g-3">
+            <div class="form-group col-lg-6">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group col-lg-6">
+              <input type="text" class="form-control" placeholder="Last Name">
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group col-lg-12">
+              <input type="text" class="form-control" placeholder=" Enter Subject">
+            </div>
+            <div class="form-group col-lg-12">
+              <textarea name="message" row="8" class="form-control" placeholder="Write Message"></textarea>
+            </div>
+            <div class="form-group col-lg-12 d-grid">
+              <button class="btn btn-brand">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="footer navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="justify-content-center align-items-center">
+        <!--<a class="home" aria-current="page" href="#">
+          <img src="assets/images/C-Atiman-Black.svg" alt="Logo" class="nav-logo">
+        </a> -->
+        <a class="home logo-icon align-items-center text-center" aria-current="page" href="#">
+          <img src="assets/images/logo-color-small.svg" alt="Logo" class="nav-logo">
+        </a>
+        <a class="h6">
+          Copyright 2024 ATIMAN. All rights reserved.
+        </a>
+      </div>
+      <div>
+        <div class>
+          <a class="bootstrap-icon" aria-current="page" href="#">
+            <i class="bi bi-github iconbox-dark"></i>
+          </a>
+          <a class="facebook-icon" aria-current="page" href="#">
+            <i class="bi bi-facebook iconbox-dark"></i>
+          </a>
+          <a class="messenger-icon" aria-current="page" href="#">
+            <i class="bi bi-messenger iconbox-dark"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
