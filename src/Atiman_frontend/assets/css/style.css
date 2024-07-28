@@ -2,13 +2,13 @@
 @import url(../css/poppins.css);
 
 /* VARIABLES */
-:root{
+:root {
     --c-dark: #052520;
     --c-brand: #0e6833;
     --c-brand-light: #11b173;
     --c-brand-rgb: 64, 162, 120;
     --c-body: #a0a0a0;
-    --box-shadow: 0px 15px 25px rgba(0,0,0,0.08);
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;
 }
 
@@ -17,8 +17,17 @@ body {
     color: var(--c-body);
 }
 
-h1, h2, h3,h4, h5, h6
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-weight: 600;
     color: var(--c-dark);
 }
@@ -29,8 +38,8 @@ a {
     transition: var(--transition);
 }
 
-a:hover{
-    color:var(--c-brand-light);
+a:hover {
+    color: var(--c-brand-light);
 }
 
 img {
@@ -38,24 +47,38 @@ img {
     height: auto;
 }
 
-.section-padding{
+.section-padding {
     padding-top: 140px;
     padding-bottom: 140px;
 }
 
+.final-logo {
+    width: 450px;
+    height: 270px;
+    align-items: center;
+    text-align: center;
+}
+
 /* NAVBAR & FOOTER */
-.navbar, .footer{
+.navbar,
+.footer {
     box-shadow: var(--box-shadow);
     background-image: linear-gradient(to right, #52bd31a4, #4b6d608e, #53c57fa8, #14aa2d8e, #1f7e07b7);
 }
 
-.navbar-nav .nav-link{
+.navbar-brand {
+    position: fixed;
+    width: 250px;
+    display: flex;
+}
+
+.navbar-nav .nav-link {
     font-weight: 500;
     color: var(--c-dark);
     max-height: 40px;
 }
 
-.navbar-nav .nav-link.active{
+.navbar-nav .nav-link.active {
     color: var(--c-brand);
 }
 
@@ -71,7 +94,7 @@ img {
 }
 
 /* BUTTON */
-.btn{
+.btn {
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
@@ -79,25 +102,34 @@ img {
     padding: 10px 24px;
 }
 
-.btn-brand{
+.btn-brand {
     background-color: var(--c-brand);
     border-color: var(--c-brand);
     color: white;
 }
 
-.btn-brand:hover{
+.btn-brand:hover {
     background-color: var(--c-brand-light);
     border-color: var(--c-brand-light);
     color: white;
 }
 
-#frontpg{
-    background: linear-gradient(rgba(var(--c-brand-rgb), 0.5),rgba(var(--c-brand-rgb), 0.06)), url(../images/bg-kids.jpg);
+#frontpg {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.01), rgba(var(--c-brand-rgb), 0.01)), url(../images/bgw3.jpeg);
     background-position: center;
     background-size: cover;
     justify-content: center;
     align-items: center;
-    display: flex;    
+    display: flex;
+}
+
+#about-bg {
+    background: linear-gradient(rgba(var(--c-brand-rgb), 0.01), rgba(var(--c-brand-rgb), 0.01)), url(../images/aboutbg.jpeg);
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 /* SECTIONTITLE */
@@ -185,6 +217,6 @@ img {
 }
 
 .question:hover .iconbox {
-    background-color: var(255,255,255,0.2);
+    background-color: var(255, 255, 255, 0.2);
     color: aliceblue;
 }
