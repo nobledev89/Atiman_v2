@@ -52,12 +52,17 @@ img {
     padding-bottom: 140px;
 }
 
+/* LOGO AND IMGS */
+
 .final-logo {
     width: 450px;
-    height: 270px;
-    align-items: center;
-    text-align: center;
+    margin-right: 5px;
 }
+
+.footer-icon {
+    height: 100px;
+}
+
 
 /* NAVBAR & FOOTER */
 .navbar,
@@ -123,7 +128,7 @@ img {
     display: flex;
 }
 
-#about-bg {
+#content-bg {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.01), rgba(var(--c-brand-rgb), 0.01)), url(../images/aboutbg.jpeg);
     background-position: center;
     background-size: cover;
@@ -219,4 +224,18 @@ img {
 .question:hover .iconbox {
     background-color: var(255, 255, 255, 0.2);
     color: aliceblue;
+}
+
+/* FORMS */
+.form-control:focus {
+    border-color: var(--c-brand-light); /* Change border color */
+    box-shadow: var(--c-brand); /* Add shadow */
+}
+
+.form-label {
+    transition: color 0.3s ease-in;
+}
+
+.form-control:focus {
+    background-color: rgba(var(--c-brand-rgb), 0.1); /* Change background color */
 }
