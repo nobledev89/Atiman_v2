@@ -237,5 +237,6 @@ img {
 }
 
 .form-control:focus {
-    background-color: rgba(var(--c-brand-rgb), 0.1); /* Change background color */
+    background-color: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
 }
