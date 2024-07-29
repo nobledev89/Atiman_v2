@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./assets/images/AtimanOnline Text.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">FAQS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactus">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://atiman.gitbook.io/atiman-documentation" target="_blank"
+                            class="btn btn-brand ms-3">WHITEPAPER</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--FRONTPG-->
+    <section id="appointpg" class="min-vh-100 d-flex text-center align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div>
+                        <a href="#" class="btn btn-appoint" data-aos="fade-down" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" data-aos-delay="550">Set Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--APPOINTMENT-MODAL-->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog d-flex">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="div">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">First name *</label>
+            <input type="text" class="form-control" id="validationDefault01" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Last name *</label>
+            <input type="text" class="form-control" id="validationDefault02" value="" required>
+          </div>
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label">Address *</label>
+            <input type="text" class="form-control" id="validationDefault03" value="" required>
+          </div>
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label">Email *</label>
+            <input type="email" class="form-control" id="validationDefault04" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Mobile number *</label>
+            <input type="tel" class="form-control" id="validationDefault05" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault06" class="form-label">Gender *</label>
+            <select class="form-select form-control" aria-label="Default select example">
+              <option value="1">Female</option>
+              <option value="2">Male</option>
+              <option value="3">Other</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Birthday *</label>
+            <input type="date" class="form-control" id="validationDefault07" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Age *</label>
+            <input type="number" class="form-control" id="validationDefault08" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Referrer (Optional)</label>
+            <input type="text" class="form-control" value="" >
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Relationship with referrer</label>
+            <input type="text" class="form-control" value="" >
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Appointment Date *</label>
+            <input type="date" class="form-control" id="validationDefault09" value="" required>
+          </div>
+          <div class="col-md-6">
+            <label for="validationDefault01" class="form-label">Appointment Time *</label>
+            <input type="time" class="form-control" id="validationDefault10" value="" required>
+          </div>
+          <div>
+            <div class="col-md-12 d-grid">
+              <input type="submit" class="btn btn-success">
+            </div>
+            <div class="col-md-12 d-grid my-2">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+    <!--FOOTER-->
+    <footer class="footer navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="justify-content-center align-items-center">
+                <!--<a class="home" aria-current="page" href="#">
+          <img src="assets/images/C-Atiman-Black.svg" alt="Logo" class="nav-logo">
+        </a> -->
+                <a class="align-items-center" aria-current="page" href="#">
+                    <img src="assets/images/logo-colored-small.svg" alt="Logo">
+                </a>
+                <a class="h6 fw-bold">
+                    Copyright 2024 ATIMAN. All rights reserved.
+                </a>
+            </div>
+            <div>
+                <div class>
+                    <a class="footer-icon" aria-current="page" href="https://github.com/nobledev89/Atiman_v2"
+                        target="_blank">
+                        <i class="bi bi-github iconbox-dark"></i>
+                    </a>
+                    <a class="footer-icon" aria-current="page" href="#">
+                        <i class="bi bi-facebook iconbox-dark"></i>
+                    </a>
+                    <a class="footer-icon" aria-current="page" href="#">
+                        <i class="bi bi-messenger iconbox-dark"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
