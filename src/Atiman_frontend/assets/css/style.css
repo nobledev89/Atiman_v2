@@ -130,6 +130,8 @@ img {
     color: black;
 }
 
+/* BACKGROUNDS */
+
 #frontpg {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.01), rgba(var(--c-brand-rgb), 0.01)), url(../images/bgw3.jpeg);
     background-position: center;
@@ -148,7 +150,7 @@ img {
     display: flex;
 }
 
-#content-bg {
+#about-bg {
     background: linear-gradient(rgba(var(--c-brand-rgb), 0.01), rgba(var(--c-brand-rgb), 0.01)), url(../images/aboutbg.jpeg);
     background-position: center;
     background-size: cover;
